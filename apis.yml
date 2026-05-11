@@ -1,0 +1,73 @@
+aid: gravity-forms
+name: Gravity Forms
+description: >-
+  Gravity Forms is a premium WordPress form plugin used to build advanced
+  forms, surveys, quizzes, payment forms, and workflow applications on
+  WordPress sites. The plugin provides drag-and-drop form building,
+  conditional logic, add-on integrations with CRMs and marketing platforms,
+  and entry management. The Gravity Forms REST API v2 exposes forms,
+  entries, feeds, notifications, and submissions over HTTP using Basic
+  Auth or OAuth 1.0a authentication scoped to API keys.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - WordPress
+  - Forms
+  - Form Builder
+  - Surveys
+  - Workflow
+  - Plugins
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/gravity-forms/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: gravity-forms:rest-api-v2
+    name: Gravity Forms REST API v2
+    description: >-
+      WordPress-hosted REST API for managing Gravity Forms forms, entries,
+      feeds, fields, notifications, submissions, and results. Uses Basic
+      Auth or OAuth 1.0a with consumer keys generated in the Gravity Forms
+      REST API settings page of the WordPress admin.
+    humanURL: https://docs.gravityforms.com/rest-api-v2/
+    baseURL: https://your-wordpress-site.example/wp-json/gf/v2
+    tags:
+      - WordPress
+      - Forms
+      - Entries
+      - Feeds
+      - Notifications
+      - Submissions
+    properties:
+      - type: Documentation
+        url: https://docs.gravityforms.com/rest-api-v2/
+      - type: Authentication
+        url: https://docs.gravityforms.com/rest-api-v2-authentication/
+      - type: Forms
+        url: https://docs.gravityforms.com/rest-api-v2/#forms
+      - type: Entries
+        url: https://docs.gravityforms.com/rest-api-v2/#entries
+
+common:
+  - type: Website
+    url: https://www.gravityforms.com
+  - type: Documentation
+    url: https://docs.gravityforms.com
+  - type: API Documentation
+    url: https://docs.gravityforms.com/rest-api-v2/
+  - type: Pricing
+    url: https://www.gravityforms.com/pricing/
+  - type: Sign Up
+    url: https://www.gravityforms.com/pricing/
+  - type: Login
+    url: https://www.gravityforms.com/my-account/
+  - type: Support
+    url: https://www.gravityforms.com/support/
+  - type: Blog
+    url: https://www.gravityforms.com/blog/
+  - type: GitHub Organization
+    url: https://github.com/gravityforms
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
