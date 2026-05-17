@@ -58,7 +58,7 @@ common:
     url: https://docs.gravityforms.com/rest-api-v2/
   - type: Pricing
     url: https://www.gravityforms.com/pricing/
-  - type: Sign Up
+  - type: SignUp
     url: https://www.gravityforms.com/pricing/
   - type: Login
     url: https://www.gravityforms.com/my-account/
@@ -66,7 +66,7 @@ common:
     url: https://www.gravityforms.com/support/
   - type: Blog
     url: https://www.gravityforms.com/blog/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/gravityforms
 maintainers:
   - FN: Kin Lane
