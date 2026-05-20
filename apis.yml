@@ -50,6 +50,8 @@ apis:
         url: https://docs.gravityforms.com/rest-api-v2/#entries
 
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/gravityforms
   - type: Website
     url: https://www.gravityforms.com
   - type: Documentation
