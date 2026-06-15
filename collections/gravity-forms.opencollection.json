@@ -1,0 +1,260 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Gravity Forms REST API v2",
+    "version": "2.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "List forms",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://{host}/wp-json/gf/v2/forms"
+      },
+      "docs": "List forms"
+    },
+    {
+      "info": {
+        "name": "Create a form",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://{host}/wp-json/gf/v2/forms"
+      },
+      "docs": "Create a form"
+    },
+    {
+      "info": {
+        "name": "Get a form",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://{host}/wp-json/gf/v2/forms/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a form"
+    },
+    {
+      "info": {
+        "name": "Update a form",
+        "type": "http"
+      },
+      "http": {
+        "method": "PUT",
+        "url": "https://{host}/wp-json/gf/v2/forms/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Update a form"
+    },
+    {
+      "info": {
+        "name": "Delete a form",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://{host}/wp-json/gf/v2/forms/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "force",
+            "value": "",
+            "type": "query",
+            "description": "Permanently delete (otherwise trashed)."
+          }
+        ]
+      },
+      "docs": "Delete a form"
+    },
+    {
+      "info": {
+        "name": "Submit form data",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://{host}/wp-json/gf/v2/forms/:id/submissions",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Submit form data"
+    },
+    {
+      "info": {
+        "name": "Validate a form submission",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://{host}/wp-json/gf/v2/forms/:id/validations",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Validate a form submission"
+    },
+    {
+      "info": {
+        "name": "Search and list entries",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://{host}/wp-json/gf/v2/entries"
+      },
+      "docs": "Search and list entries"
+    },
+    {
+      "info": {
+        "name": "Create an entry",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://{host}/wp-json/gf/v2/entries"
+      },
+      "docs": "Create an entry"
+    },
+    {
+      "info": {
+        "name": "Get an entry",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://{host}/wp-json/gf/v2/entries/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get an entry"
+    },
+    {
+      "info": {
+        "name": "Update an entry",
+        "type": "http"
+      },
+      "http": {
+        "method": "PUT",
+        "url": "https://{host}/wp-json/gf/v2/entries/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Update an entry"
+    },
+    {
+      "info": {
+        "name": "Delete an entry",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://{host}/wp-json/gf/v2/entries/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "force",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Delete an entry"
+    },
+    {
+      "info": {
+        "name": "Send notifications",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://{host}/wp-json/gf/v2/notifications/send"
+      },
+      "docs": "Send notifications"
+    },
+    {
+      "info": {
+        "name": "List feeds",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://{host}/wp-json/gf/v2/feeds"
+      },
+      "docs": "List feeds"
+    },
+    {
+      "info": {
+        "name": "Create a feed",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://{host}/wp-json/gf/v2/feeds"
+      },
+      "docs": "Create a feed"
+    },
+    {
+      "info": {
+        "name": "Get form results",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://{host}/wp-json/gf/v2/results"
+      },
+      "docs": "Get form results"
+    }
+  ],
+  "bundled": true
+}
