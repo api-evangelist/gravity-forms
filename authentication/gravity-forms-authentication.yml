@@ -1,0 +1,23 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/gravity-forms-openapi.yml
+summary:
+  types:
+  - apiKey
+  - http
+  api_key_in:
+  - header
+schemes:
+- name: basicAuth
+  type: http
+  scheme: basic
+  description: Basic auth using a Gravity Forms REST API key/secret.
+  sources:
+  - openapi/gravity-forms-openapi.yml
+- name: oauth1
+  type: apiKey
+  in: header
+  parameter: Authorization
+  description: OAuth 1.0a signed requests using API key/secret.
+  sources:
+  - openapi/gravity-forms-openapi.yml

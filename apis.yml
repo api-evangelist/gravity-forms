@@ -50,6 +50,14 @@ apis:
         url: https://docs.gravityforms.com/rest-api-v2/#entries
 
 common:
+  - type: TrustCenter
+    url: security/gravity-forms-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/gravity-forms-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/gravity-forms-domain-security.yml
+  - type: Authentication
+    url: authentication/gravity-forms-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/gravityforms
   - type: Website

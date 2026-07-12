@@ -1,0 +1,13 @@
+generated: '2026-07-11'
+method: searched
+probe: true
+source: https://docs.gravityforms.com/information-for-security-researchers/
+url: https://docs.gravityforms.com/information-for-security-researchers/
+certifications:
+- HIPAA
+- GDPR
+evidence:
+- source: https://docs.gravityforms.com/information-for-security-researchers/
+  keywords:
+  - hipaa
+  - gdpr
