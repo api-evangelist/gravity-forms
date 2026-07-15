@@ -50,6 +50,8 @@ apis:
         url: https://docs.gravityforms.com/rest-api-v2/#entries
 
 common:
+  - type: AgenticAccess
+    url: agentic-access/gravity-forms-agentic-access.yml
   - type: TrustCenter
     url: security/gravity-forms-trust-center.yml
   - type: VulnerabilityDisclosure
