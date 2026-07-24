@@ -1,0 +1,55 @@
+openapi: 3.1.0
+info:
+  title: Gravity Forms REST API v2 Entries Feeds API
+  description: 'The Gravity Forms REST API v2 provides programmatic access to forms,
+
+    entries, submissions, validations, notifications, feeds, and results
+
+    on a WordPress site running the Gravity Forms plugin.
+
+    '
+  version: '2.0'
+  contact:
+    name: Gravity Forms
+    url: https://docs.gravityforms.com/rest-api-v2/
+servers:
+- url: https://{host}/wp-json/gf/v2
+  description: WordPress site running Gravity Forms
+  variables:
+    host:
+      default: example.com
+      description: The hostname of the WordPress installation
+security:
+- basicAuth: []
+- oauth1: []
+tags:
+- name: Feeds
+paths:
+  /feeds:
+    get:
+      summary: List feeds
+      operationId: listFeeds
+      responses:
+        '200':
+          description: A list of feeds.
+      tags:
+      - Feeds
+    post:
+      summary: Create a feed
+      operationId: createFeed
+      responses:
+        '200':
+          description: The created feed.
+      tags:
+      - Feeds
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: Basic auth using a Gravity Forms REST API key/secret.
+    oauth1:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: OAuth 1.0a signed requests using API key/secret.

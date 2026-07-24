@@ -1,0 +1,91 @@
+openapi: 3.1.0
+info:
+  title: Gravity Forms REST API v2 Entries API
+  description: 'The Gravity Forms REST API v2 provides programmatic access to forms,
+
+    entries, submissions, validations, notifications, feeds, and results
+
+    on a WordPress site running the Gravity Forms plugin.
+
+    '
+  version: '2.0'
+  contact:
+    name: Gravity Forms
+    url: https://docs.gravityforms.com/rest-api-v2/
+servers:
+- url: https://{host}/wp-json/gf/v2
+  description: WordPress site running Gravity Forms
+  variables:
+    host:
+      default: example.com
+      description: The hostname of the WordPress installation
+security:
+- basicAuth: []
+- oauth1: []
+tags:
+- name: Entries
+paths:
+  /entries:
+    get:
+      summary: Search and list entries
+      operationId: listEntries
+      responses:
+        '200':
+          description: A list of entries.
+      tags:
+      - Entries
+    post:
+      summary: Create an entry
+      operationId: createEntry
+      responses:
+        '200':
+          description: The created entry.
+      tags:
+      - Entries
+  /entries/{id}:
+    parameters:
+    - in: path
+      name: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Get an entry
+      operationId: getEntry
+      responses:
+        '200':
+          description: The requested entry.
+      tags:
+      - Entries
+    put:
+      summary: Update an entry
+      operationId: updateEntry
+      responses:
+        '200':
+          description: The updated entry.
+      tags:
+      - Entries
+    delete:
+      summary: Delete an entry
+      operationId: deleteEntry
+      parameters:
+      - in: query
+        name: force
+        schema:
+          type: boolean
+      responses:
+        '200':
+          description: The deleted entry.
+      tags:
+      - Entries
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: Basic auth using a Gravity Forms REST API key/secret.
+    oauth1:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: OAuth 1.0a signed requests using API key/secret.
