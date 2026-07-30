@@ -9,7 +9,19 @@ description: >-
   entries, feeds, notifications, and submissions over HTTP using Basic
   Auth or OAuth 1.0a authentication scoped to API keys.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gravity-forms.png
 tags:
   - WordPress
   - Forms
@@ -23,32 +35,80 @@ created: '2026-05-11'
 modified: '2026-05-11'
 specificationVersion: '0.19'
 apis:
-  - aid: gravity-forms:rest-api-v2
-    name: Gravity Forms REST API v2
-    description: >-
-      WordPress-hosted REST API for managing Gravity Forms forms, entries,
-      feeds, fields, notifications, submissions, and results. Uses Basic
-      Auth or OAuth 1.0a with consumer keys generated in the Gravity Forms
-      REST API settings page of the WordPress admin.
-    humanURL: https://docs.gravityforms.com/rest-api-v2/
-    baseURL: https://your-wordpress-site.example/wp-json/gf/v2
-    tags:
-      - WordPress
-      - Forms
-      - Entries
-      - Feeds
-      - Notifications
-      - Submissions
-    properties:
-      - type: Documentation
-        url: https://docs.gravityforms.com/rest-api-v2/
-      - type: Authentication
-        url: https://docs.gravityforms.com/rest-api-v2-authentication/
-      - type: Forms
-        url: https://docs.gravityforms.com/rest-api-v2/#forms
-      - type: Entries
-        url: https://docs.gravityforms.com/rest-api-v2/#entries
-
+- aid: gravity-forms:rest-api-v2
+  name: Gravity Forms REST API v2
+  description: >-
+    WordPress-hosted REST API for managing Gravity Forms forms, entries, feeds, fields, notifications,
+    submissions, and results. Uses Basic Auth or OAuth 1.0a with consumer keys generated in the Gravity
+    Forms REST API settings page of the WordPress admin.
+  humanURL: https://docs.gravityforms.com/rest-api-v2/
+  baseURL: https://your-wordpress-site.example/wp-json/gf/v2
+  tags:
+  - WordPress
+  - Forms
+  - Entries
+  - Feeds
+  - Notifications
+  - Submissions
+  properties:
+  - type: Documentation
+    url: https://docs.gravityforms.com/rest-api-v2/
+  - type: Authentication
+    url: https://docs.gravityforms.com/rest-api-v2-authentication/
+  - type: Forms
+    url: https://docs.gravityforms.com/rest-api-v2/#forms
+  - type: Entries
+    url: https://docs.gravityforms.com/rest-api-v2/#entries
+- aid: gravity-forms:gravity-forms-entries-api
+  name: Gravity Forms Entries API
+  description: The Entries API from Gravity Forms — 2 operation(s) for entries.
+  humanURL: https://docs.gravityforms.com/rest-api-v2/
+  baseURL: https://your-wordpress-site.example/wp-json/gf/v2
+  tags:
+  - Entries
+  properties:
+  - type: OpenAPI
+    url: openapi/gravity-forms-entries-api-openapi.yml
+- aid: gravity-forms:gravity-forms-feeds-api
+  name: Gravity Forms Feeds API
+  description: The Feeds API from Gravity Forms — 1 operation(s) for feeds.
+  humanURL: https://docs.gravityforms.com/rest-api-v2/
+  baseURL: https://your-wordpress-site.example/wp-json/gf/v2
+  tags:
+  - Feeds
+  properties:
+  - type: OpenAPI
+    url: openapi/gravity-forms-feeds-api-openapi.yml
+- aid: gravity-forms:gravity-forms-forms-api
+  name: Gravity Forms Forms API
+  description: The Forms API from Gravity Forms — 4 operation(s) for forms.
+  humanURL: https://docs.gravityforms.com/rest-api-v2/
+  baseURL: https://your-wordpress-site.example/wp-json/gf/v2
+  tags:
+  - Forms
+  properties:
+  - type: OpenAPI
+    url: openapi/gravity-forms-forms-api-openapi.yml
+- aid: gravity-forms:gravity-forms-notifications-api
+  name: Gravity Forms Notifications API
+  description: The Notifications API from Gravity Forms — 1 operation(s) for notifications.
+  humanURL: https://docs.gravityforms.com/rest-api-v2/
+  baseURL: https://your-wordpress-site.example/wp-json/gf/v2
+  tags:
+  - Notifications
+  properties:
+  - type: OpenAPI
+    url: openapi/gravity-forms-notifications-api-openapi.yml
+- aid: gravity-forms:gravity-forms-results-api
+  name: Gravity Forms Results API
+  description: The Results API from Gravity Forms — 1 operation(s) for results.
+  humanURL: https://docs.gravityforms.com/rest-api-v2/
+  baseURL: https://your-wordpress-site.example/wp-json/gf/v2
+  tags:
+  - Results
+  properties:
+  - type: OpenAPI
+    url: openapi/gravity-forms-results-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/gravity-forms-agentic-access.yml
