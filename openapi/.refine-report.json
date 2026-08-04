@@ -1,0 +1,22 @@
+{
+  "provider": "gravity-forms",
+  "sources": [
+    "gravity-forms-entries-api-openapi.yml",
+    "gravity-forms-feeds-api-openapi.yml",
+    "gravity-forms-forms-api-openapi.yml",
+    "gravity-forms-notifications-api-openapi.yml",
+    "gravity-forms-results-api-openapi.yml"
+  ],
+  "outputs": [
+    "gravity-forms-entries-api-openapi.yml",
+    "gravity-forms-feeds-api-openapi.yml",
+    "gravity-forms-forms-api-openapi.yml",
+    "gravity-forms-notifications-api-openapi.yml",
+    "gravity-forms-results-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
