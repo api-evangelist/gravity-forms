@@ -1,0 +1,133 @@
+{
+  "item": [
+    {
+      "id": "7eb55edd-6781-495d-a32b-c2ddd12e93dd",
+      "name": "Results",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "6de041cf-d92f-424e-9abc-43696f60a9a0",
+          "name": "Get form results",
+          "request": {
+            "name": "Get form results",
+            "description": {},
+            "url": {
+              "path": [
+                "results"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "The hostname of the WordPress installation",
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e34e03d5-6f2f-4ddc-bf86-df7d788040ff",
+              "name": "Aggregated results.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "results"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The hostname of the WordPress installation",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "The hostname of the WordPress installation",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "example.com",
+      "key": "host"
+    },
+    {
+      "type": "string",
+      "value": "https://{{host}}/wp-json/gf/v2",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "basic",
+    "basic": [
+      {
+        "key": "username",
+        "value": "{{basicAuthUsername}}"
+      },
+      {
+        "key": "password",
+        "value": "{{basicAuthPassword}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "8bad9a0a-a30e-4188-aa06-d1af937e7822",
+    "name": "Gravity Forms REST API v2 Entries Results API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Gravity Forms REST API v2 provides programmatic access to forms,\nentries, submissions, validations, notifications, feeds, and results\non a WordPress site running the Gravity Forms plugin.\n\n\nContact Support:\n Name: Gravity Forms",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "item": [
+    {
+      "id": "dc0754cd-7070-4871-aed3-4ff93f701cce",
+      "name": "Notifications",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "938a1676-0a77-47f6-b6f4-e4af41df4bb7",
+          "name": "Send notifications",
+          "request": {
+            "name": "Send notifications",
+            "description": {},
+            "url": {
+              "path": [
+                "notifications",
+                "send"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "The hostname of the WordPress installation",
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                }
+              ]
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "040f817e-580a-48af-8a36-d7dc475639a0",
+              "name": "Notification send result.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "notifications",
+                    "send"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The hostname of the WordPress installation",
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "The hostname of the WordPress installation",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "example.com",
+      "key": "host"
+    },
+    {
+      "type": "string",
+      "value": "https://{{host}}/wp-json/gf/v2",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "basic",
+    "basic": [
+      {
+        "key": "username",
+        "value": "{{basicAuthUsername}}"
+      },
+      {
+        "key": "password",
+        "value": "{{basicAuthPassword}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "81a9fe46-3e87-431b-9a86-4f7d6b6b2287",
+    "name": "Gravity Forms REST API v2 Entries Notifications API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Gravity Forms REST API v2 provides programmatic access to forms,\nentries, submissions, validations, notifications, feeds, and results\non a WordPress site running the Gravity Forms plugin.\n\n\nContact Support:\n Name: Gravity Forms",
+      "type": "text/plain"
+    }
+  }
+}

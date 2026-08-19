@@ -1,0 +1,106 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Gravity Forms REST API v2 Entries API",
+    "version": "2.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Entries",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search and list entries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/wp-json/gf/v2/entries"
+          },
+          "docs": "Search and list entries"
+        },
+        {
+          "info": {
+            "name": "Create an entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{host}/wp-json/gf/v2/entries"
+          },
+          "docs": "Create an entry"
+        },
+        {
+          "info": {
+            "name": "Get an entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/wp-json/gf/v2/entries/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get an entry"
+        },
+        {
+          "info": {
+            "name": "Update an entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://{host}/wp-json/gf/v2/entries/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update an entry"
+        },
+        {
+          "info": {
+            "name": "Delete an entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://{host}/wp-json/gf/v2/entries/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "force",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Delete an entry"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

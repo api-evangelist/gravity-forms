@@ -1,0 +1,47 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Gravity Forms REST API v2 Entries Feeds API",
+    "version": "2.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Feeds",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List feeds",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/wp-json/gf/v2/feeds"
+          },
+          "docs": "List feeds"
+        },
+        {
+          "info": {
+            "name": "Create a feed",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{host}/wp-json/gf/v2/feeds"
+          },
+          "docs": "Create a feed"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

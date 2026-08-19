@@ -1,0 +1,36 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Gravity Forms REST API v2 Entries Results API",
+    "version": "2.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Results",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get form results",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/wp-json/gf/v2/results"
+          },
+          "docs": "Get form results"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
