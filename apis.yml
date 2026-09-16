@@ -1,13 +1,10 @@
 aid: gravity-forms
 name: Gravity Forms
-description: >-
-  Gravity Forms is a premium WordPress form plugin used to build advanced
-  forms, surveys, quizzes, payment forms, and workflow applications on
-  WordPress sites. The plugin provides drag-and-drop form building,
-  conditional logic, add-on integrations with CRMs and marketing platforms,
-  and entry management. The Gravity Forms REST API v2 exposes forms,
-  entries, feeds, notifications, and submissions over HTTP using Basic
-  Auth or OAuth 1.0a authentication scoped to API keys.
+description: Gravity Forms is a premium WordPress form plugin used to build advanced forms, surveys, quizzes,
+  payment forms, and workflow applications on WordPress sites. The plugin provides drag-and-drop form
+  building, conditional logic, add-on integrations with CRMs and marketing platforms, and entry management.
+  The Gravity Forms REST API v2 exposes forms, entries, feeds, notifications, and submissions over HTTP
+  using Basic Auth or OAuth 1.0a authentication scoped to API keys.
 type: Index
 deliveryModel:
   model: saas
@@ -36,29 +33,27 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gravity-forms.png
 tags:
-  - WordPress
-  - Forms
-  - Form Builder
-  - Surveys
-  - Workflows
-  - Plugins
+- WordPress
+- Forms
+- Form Builder
+- Surveys
+- Workflows
+- Plugins
 tags_raw:
-  - WordPress
-  - Forms
-  - Form Builder
-  - Surveys
-  - Workflow
-  - Plugins
-url: >-
-  https://raw.githubusercontent.com/api-evangelist/gravity-forms/refs/heads/main/apis.yml
+- WordPress
+- Forms
+- Form Builder
+- Surveys
+- Workflow
+- Plugins
+url: https://raw.githubusercontent.com/api-evangelist/gravity-forms/refs/heads/main/apis.yml
 created: '2026-05-11'
-modified: '2026-05-11'
+modified: '2026-09-16'
 specificationVersion: '0.23'
 apis:
 - aid: gravity-forms:rest-api-v2
   name: Gravity Forms REST API v2
-  description: >-
-    WordPress-hosted REST API for managing Gravity Forms forms, entries, feeds, fields, notifications,
+  description: WordPress-hosted REST API for managing Gravity Forms forms, entries, feeds, fields, notifications,
     submissions, and results. Uses Basic Auth or OAuth 1.0a with consumer keys generated in the Gravity
     Forms REST API settings page of the WordPress admin.
   humanURL: https://docs.gravityforms.com/rest-api-v2/
@@ -107,7 +102,7 @@ apis:
   - type: OpenAPI
     url: openapi/gravity-forms-feeds-api-openapi.yml
 - aid: gravity-forms:gravity-forms-forms-api
-  name: Gravity Forms Forms API
+  name: Gravity Forms API
   description: The Forms API from Gravity Forms — 4 operation(s) for forms.
   humanURL: https://docs.gravityforms.com/rest-api-v2/
   baseURL: https://your-wordpress-site.example/wp-json/gf/v2
@@ -139,36 +134,39 @@ apis:
   - type: OpenAPI
     url: openapi/gravity-forms-results-api-openapi.yml
 common:
-  - type: AgenticAccess
-    url: agentic-access/gravity-forms-agentic-access.yml
-  - type: TrustCenter
-    url: security/gravity-forms-trust-center.yml
-  - type: VulnerabilityDisclosure
-    url: security/gravity-forms-vulnerability-disclosure.yml
-  - type: DomainSecurity
-    url: security/gravity-forms-domain-security.yml
-  - type: Authentication
-    url: authentication/gravity-forms-authentication.yml
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/gravityforms
-  - type: Website
-    url: https://www.gravityforms.com
-  - type: Documentation
-    url: https://docs.gravityforms.com
-  - type: API Documentation
-    url: https://docs.gravityforms.com/rest-api-v2/
-  - type: Pricing
-    url: https://www.gravityforms.com/pricing/
-  - type: Signup
-    url: https://www.gravityforms.com/pricing/
-  - type: Login
-    url: https://www.gravityforms.com/my-account/
-  - type: Support
-    url: https://www.gravityforms.com/support/
-  - type: Blog
-    url: https://www.gravityforms.com/blog/
-  - type: GitHubOrganization
-    url: https://github.com/gravityforms
+- type: AgenticAccess
+  url: agentic-access/gravity-forms-agentic-access.yml
+- type: TrustCenter
+  url: security/gravity-forms-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/gravity-forms-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/gravity-forms-domain-security.yml
+- type: Authentication
+  url: authentication/gravity-forms-authentication.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/gravityforms
+- type: Website
+  url: https://www.gravityforms.com
+- type: Documentation
+  url: https://docs.gravityforms.com
+- type: API Documentation
+  url: https://docs.gravityforms.com/rest-api-v2/
+- type: Pricing
+  url: https://www.gravityforms.com/pricing/
+- type: Signup
+  url: https://www.gravityforms.com/pricing/
+- type: Login
+  url: https://www.gravityforms.com/my-account/
+- type: Support
+  url: https://www.gravityforms.com/support/
+- type: Blog
+  url: https://www.gravityforms.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/gravityforms
+- name: MCP Documentation
+  url: https://docs.gravityforms.com/connecting-to-the-mcp-server/
+  type: MCPDocumentation
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
