@@ -62,7 +62,7 @@ apis:
   - WordPress
   - Forms
   - Entries
-  - Feeds
+  - Feed
   - Notification
   - Submissions
   tags_raw:
@@ -97,6 +97,8 @@ apis:
   humanURL: https://docs.gravityforms.com/rest-api-v2/
   baseURL: https://your-wordpress-site.example/wp-json/gf/v2
   tags:
+  - Feed
+  tags_raw:
   - Feeds
   properties:
   - type: OpenAPI
