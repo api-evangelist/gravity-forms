@@ -1,11 +1,7 @@
 {
   "provider": "gravity-forms",
   "sources": [
-    "gravity-forms-entries-api-openapi.yml",
-    "gravity-forms-feeds-api-openapi.yml",
-    "gravity-forms-forms-api-openapi.yml",
-    "gravity-forms-notifications-api-openapi.yml",
-    "gravity-forms-results-api-openapi.yml"
+    "_original/gravity-forms-openapi.yml"
   ],
   "outputs": [
     "gravity-forms-entries-api-openapi.yml",
@@ -17,6 +13,37 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "gravity-forms-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "gravity-forms-openapi.yml: tagged paths GET /forms -> Forms",
+    "gravity-forms-openapi.yml: tagged paths POST /forms -> Forms",
+    "gravity-forms-openapi.yml: tagged paths GET /forms/{id} -> Forms",
+    "gravity-forms-openapi.yml: tagged paths PUT /forms/{id} -> Forms",
+    "gravity-forms-openapi.yml: tagged paths DELETE /forms/{id} -> Forms",
+    "gravity-forms-openapi.yml: tagged paths POST /forms/{id}/submissions -> Forms",
+    "gravity-forms-openapi.yml: tagged paths POST /forms/{id}/validations -> Forms",
+    "gravity-forms-openapi.yml: tagged paths GET /entries -> Entries",
+    "gravity-forms-openapi.yml: tagged paths POST /entries -> Entries",
+    "gravity-forms-openapi.yml: tagged paths GET /entries/{id} -> Entries",
+    "gravity-forms-openapi.yml: tagged paths PUT /entries/{id} -> Entries",
+    "gravity-forms-openapi.yml: tagged paths DELETE /entries/{id} -> Entries",
+    "gravity-forms-openapi.yml: tagged paths POST /notifications/send -> Notifications",
+    "gravity-forms-openapi.yml: tagged paths GET /feeds -> Feeds",
+    "gravity-forms-openapi.yml: tagged paths POST /feeds -> Feeds",
+    "gravity-forms-openapi.yml: tagged paths GET /results -> Results",
+    "gravity-forms-openapi.yml: declared missing tag: Entries",
+    "gravity-forms-openapi.yml: declared missing tag: Feeds",
+    "gravity-forms-openapi.yml: declared missing tag: Forms",
+    "gravity-forms-openapi.yml: declared missing tag: Notifications",
+    "gravity-forms-openapi.yml: declared missing tag: Results",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "gravity-forms-entries-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "gravity-forms-feeds-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "gravity-forms-forms-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "gravity-forms-notifications-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "gravity-forms-results-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
